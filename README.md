@@ -1,3 +1,9 @@
 # FAQ
 
-1.为什么typeof null 返回 object？ 如何检查一个值是否为 null？
+typeof null //"object"
+typeof NaN // "number"
+Object.prototype.toString.call(NaN) // "[object Number]"
+0 === -0 //true
+NaN === NaN //false
+Object.is(0, -0) // false
+Object.is(NaN, NaN) // true
